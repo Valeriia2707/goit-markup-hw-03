@@ -20,6 +20,18 @@ img {
     height: auto;
 }
 
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 
 body {
@@ -38,21 +50,22 @@ header {
     padding: 0 15px; 
     margin: 0 auto;
 }
-.header-container{
+header .container{
     display: flex;
     align-items: center;
-    padding: 24px 0;
+    border-bottom: 1px solid #e7e9fc;
 }
-nav{
+.nav{
     display: flex;
     align-items: center;
 }
 
-nav ul{
+.nav ul{
     display: flex;
     gap: 40px;
     margin-right: 332px;
     width: 261px;
+    padding: 24px 0;
 }
 .address ul{
     display: flex;
@@ -123,6 +136,7 @@ nav ul{
 .first-section {
     background-color: #2E2F42;
     height: 600px;
+    padding: 188px 0;
 }
 
 .heading {
@@ -133,10 +147,9 @@ nav ul{
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
-    padding-top: 188px;
 }
 
 .button {
@@ -151,6 +164,9 @@ nav ul{
     border-radius: 4px;
     display: block;
     margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .button:hover {
@@ -160,10 +176,15 @@ nav ul{
 .button:focus {
     background-color: #404bbf;
 }
-.second-section__container ul{
+.second-section{
+    padding: 120px 0;
+}
+.second-section .container .second-section-list{
     display: flex;
-    padding: 120px 15px;
     gap: 24px;
+}
+.second-list{
+    width: calc((100% - 72px) / 4);
 }
 
 .second-heading {
@@ -200,15 +221,16 @@ nav ul{
 .third-section {
     background-color: #F4F4FD;
     height: 732px;
+    padding: 120px 0;
 }
-.third-section__container ul{
+.third-section__container .third-ul{
     display: flex;
     gap: 24px;
 }
 
 .team-heading{
-    margin-top: 32px;
-    margin-bottom: 8px;;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 
@@ -221,7 +243,6 @@ nav ul{
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    padding-top: 120px;
     margin: 0 auto;
     margin-bottom: 72px;
 }
@@ -229,12 +250,14 @@ nav ul{
 .third-list {
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px;
     width: 264px;
     height: 380px;
 }
+.third-li-div{
+    padding: 32px 0;
+}
 
-.third-section .third-paragraph {
+.third-paragraph {
     font-weight: 400;
     font-style: regular;
     font-size: 16px;
@@ -244,6 +267,10 @@ nav ul{
     text-align: center;
 }
 
+.fourth-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .fourth-heading {
     font-weight: 700;
     font-style: bold;
@@ -253,11 +280,10 @@ nav ul{
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    padding-top: 120px;
     margin: 0 auto;
     margin-bottom: 72px;
 }
-.fourth-section__container ul{
+.fourth-section__container .fourth-ul{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -265,7 +291,6 @@ nav ul{
 }
 .fourth-section__container{
     flex-basis: calc((100% - 48px) / 3);
-    padding-bottom: 120px;
 }
 
 .fourth-section__text{
@@ -299,6 +324,7 @@ nav ul{
 .footer {
     background-color: #2E2F42;
     height: 312px;
+    padding: 100px 0;
 }
 
 .footer .footer-text {
@@ -315,7 +341,6 @@ nav ul{
     color: #F4F4FD;
 }
 .footer a{
-    display: block;
-    padding-top: 100px;
+    display: inline-block;
     margin-bottom: 16px;
 }

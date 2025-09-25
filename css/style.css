@@ -42,8 +42,9 @@ body {
     margin: 0 auto;
 }
 
-header {
+.header {
     background-color: #E7E9FC;
+    border-bottom: 1px solid #e7e9fc;
 }
 .container{
     max-width: 1158px;
@@ -53,14 +54,13 @@ header {
 header .container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e7e9fc;
 }
 .nav{
     display: flex;
     align-items: center;
 }
 
-.nav ul{
+.nav .nav-ul{
     display: flex;
     gap: 40px;
     margin-right: 332px;
@@ -103,6 +103,7 @@ header .container{
     line-height: 1.5;
     text-decoration: none;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 #nav-link-first:hover {

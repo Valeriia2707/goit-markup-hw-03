@@ -45,11 +45,13 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
 }
 .nav {
   display: flex;
